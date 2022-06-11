@@ -46,20 +46,20 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView movieName;
-        TextView peopleCount;
+        TextView movieNumber;
         TextView salesView;
         TextView movieOpen;
 
                 public ViewHolder(View itemView){
                      super(itemView);
                      movieName = itemView.findViewById(R.id.movieName);
-                     peopleCount = itemView.findViewById(R.id.peopleCount);
+                     movieNumber= itemView.findViewById(R.id.movieNumber);
                      salesView = itemView.findViewById(R.id.salesView);
                      movieOpen = itemView.findViewById(R.id.MovieOpen);
                 }
                 public void setItem(Movie item){
                      movieName.setText(item.movieNm);
-                     peopleCount.setText(item.audiCnt + "명");
+                     movieNumber.setText(item.rnum + "번");
                      salesView.setText(item.salesAcc + "원");
                      movieOpen.setText(item.openDt);
 

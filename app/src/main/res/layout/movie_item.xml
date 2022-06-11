@@ -39,7 +39,7 @@
                     android:maxLines="1"/>
 
                 <TextView
-                    android:id="@+id/peopleCount"
+                    android:id="@+id/movieNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
